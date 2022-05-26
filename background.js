@@ -1,5 +1,5 @@
 chrome.runtime.onInstalled.addListener(() => {
-     data = fetchAsync("https://github.com/BorisLeMeec/sutom_solver/blob/main/dico.txt")
+     data = fetchAsync("https://raw.githubusercontent.com/BorisLeMeec/sutom_solver/main/dico.json")
 
      console.log(data.length)
 })
@@ -7,7 +7,7 @@ chrome.runtime.onInstalled.addListener(() => {
 async function fetchAsync (url) {
     let response = await fetch(url);
 
-    
+
     let data = await response.json();
     return data;
   }
