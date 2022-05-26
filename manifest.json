@@ -1,0 +1,20 @@
+{
+    "name": "Sutom solver",
+    "description": "Brute force extension to resolve french game sutom!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://github.com/"
+      ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+  }
